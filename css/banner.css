@@ -1,0 +1,50 @@
+body {
+  font-family: "Raleway";
+}
+
+.banner__imagen {
+  width: 100%;
+  height: 32rem;
+}
+
+.banner__titulo {
+  left: 10%;
+  top: 22rem;
+}
+
+.banner__parrafo {
+  left: 10%;
+  top: 29rem;
+}
+
+.banner__boton {
+  left: 10.5%;
+  top: 32rem;
+}
+
+@media screen and (max-width: 480px){
+  .banner__titulo {
+    left: 5%;
+    top: 31rem;
+  }
+  .banner__parrafo {
+    left: 5%;
+    top: 35rem;
+  }
+  .banner__boton{
+    left: 5%;
+    top: 39rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px){
+  .banner__titulo {
+    top: 24rem;
+  }
+  .banner__parrafo {
+    top: 29rem;
+  }
+  .banner__boton{
+    top: 31rem;
+  }
+}

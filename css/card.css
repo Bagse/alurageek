@@ -1,0 +1,12 @@
+.imagen-pri{
+    width: 254px;
+    height: 260px;
+}
+
+.card{
+    transition: 1s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}

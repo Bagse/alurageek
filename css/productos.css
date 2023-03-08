@@ -1,0 +1,30 @@
+.nav__productos {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+
+@media screen and (max-width: 480px){
+  .nav__productos{
+    display: flex;
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+  #productos-playstation-container, #productos-nintendo-container, #productos-consolas-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px){
+  .nav__productos{
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  #productos-playstation-container, #productos-nintendo-container, #productos-consolas-container{
+    display: flex;
+  }
+}

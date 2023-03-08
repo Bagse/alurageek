@@ -1,0 +1,52 @@
+.form-control {
+  width: 30rem;
+}
+
+.icono-img {
+  height: 24px;
+  width: 24px;
+  transition: 1.2s;
+}
+
+.icono-img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 480px) {
+  .form-control {
+    width: 24rem;
+  }
+  footer {
+    display: flex;
+  }
+  .container-final {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hablecon {
+    margin-top: 2rem;
+  }
+  .iconos {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 790px) {
+  footer {
+    display: flex;
+  }
+  .container-final {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .hablecon {
+    margin-top: 2rem;
+  }
+  .iconos {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+}

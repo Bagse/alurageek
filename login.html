@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/e-games_icon.ico" type="image/x-icon" />
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body class="bg-dark">
+    <section class="menu m-4">
+        <div class="cabecera">
+          <header
+            class="cabecera__logo d-flex justify-content-start p-2 align-items-center"
+          >
+            <a href="index.html"
+              ><img class="logo" src="./assets/logo.svg" alt="Logo AluraGeek"
+            /></a>
+          </header>
+        </div>
+    </section>
+
+    <section class="d-flex justify-content-center p-5">
+        
+    <form class="form" id="form-login">
+        <p class="form-title">Ingrese con su cuenta</p>
+         <div class="input-container pt-2">
+           <input placeholder="Ingrese su email" id="email-login" type="email">
+           <span>
+             <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+             </svg>
+           </span>
+       </div>
+       <div class="input-container">
+           <input placeholder="Ingrese su contraseña" id="contra-login" type="password">
+ 
+           <span>
+             <svg stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+               <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+             </svg>
+            </span>
+         </div>
+          <button class="submit" type="button" onclick="validarLogin()">
+         Ingresar
+       </button>
+ 
+       <p class="signup-link">
+         No tienes cuenta?
+         <a href="">Registrate</a>
+       </p>
+    </form>
+ 
+    </section>
+
+    <section class="mt-5">
+        <div class="d-flex align-items-center justify-content-evenly">
+          <div>
+            <a href="index.html"
+              ><img class="logo pb-3" src="./assets/logo.svg" alt="Logo AluraGeek"
+            /></a>
+            <div>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Política de privacidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Programa de fidelidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nuestras tiendas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quiero ser franquiciado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Anuncie aquí</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-warning pb-3">Hable con nosotros!</h4>
+            <form id="formulario" name="formulario" action="https://formsubmit.co/52c1ac64956fd922f4bfcf6c3c88718b" method="post">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Email</label>
+                <input type="email" class="form-control" width="20rem" id="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+              </div>
+              <button class="btn btn-warning" type="submit" value="Enviar"">Enviar mensaje</button>
+            </form>
+        </div>
+      </section>
+      <footer class="p-5 pb-3 d-flex flex-column justify-content-center align-items-center">
+        <p class="text-light">&#169; Creado por Bagse - 2023</p>
+        <div>
+          <a href="https://github.com/Bagse" target="_blank"><img class="img-fluid icono-img" src="./assets/github_icon.svg" alt="Icono GitHub"></a>
+          <a href="https://www.linkedin.com/in/brian-ar%C3%B3n-g%C3%B3mez-sequeiros/" target="_blank"><img class="img-fluid icono-img" src="./assets/linkedin_icon.svg" alt="Icono Linkedin"></a>
+      </footer>
+      <script src="./services/login.js"></script>
+      <script src="./services/formulario.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
